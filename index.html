@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alivera | Nexo Creativo - Diseño Estratégicamente Accesible</title>
+    
+    <!-- Tipografías: Playfair Display (Títulos) + Poppins (Cuerpo) -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;900&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Hoja de Estilos Principal -->
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+    <!-- Barra de Navegación con efecto Glassmorphism -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <a href="#inicio">
+                <!-- Reemplazar con la ruta real del logo -->
+                <img src="assets/images/LogoH.png" alt="Alivera Creative Designs" class="nav-logo">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#inicio" class="nav-item">Inicio</a></li>
+            <li><a href="#portafolio" class="nav-item">Portafolio</a></li>
+            <li><a href="#contacto" class="nav-item">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main id="inicio">
+        
+        <!-- SECCIÓN: QUIÉNES SOMOS -->
+        <section id="quienes-somos" class="parallax-section">
+            <div class="parallax-bg js-parallax" data-speed="0.3" style="background-image: url('https://via.placeholder.com/1920x1080/1A1A1A/1A1A1A');"></div>
+            <div class="container grid-two">
+                <div class="text-side js-parallax-element" data-speed="-0.1">
+                    <h2>¿Quiénes Somos?</h2>
+                    <p class="highlight-text">Alivera es el espacio donde la visión de <strong>Ashby Olvera</strong> demuestra que el diseño de alto impacto no tiene por qué ser inalcanzable.</p>
+                    <p>Acompañamos a emprendedores y pequeños negocios en la transformación de sus ideas en herramientas visuales potentes. Creemos en una ecuación justa: <span class="gold-highlight">calidad técnica de agencia</span> con la calidez y accesibilidad de una marca personal.</p>
+                </div>
+                <div class="image-side js-parallax-element" data-speed="0.1">
+                    <img src="assets/images/AnimacionFinal_1_0250.jpg" alt="Equipo Creativo Alivera">
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN: MISIÓN -->
+        <section id="mision" class="parallax-section">
+            <div class="parallax-bg js-parallax" data-speed="0.4" style="background-image: url('https://via.placeholder.com/1920x1080/111/111');"></div>
+            <div class="container grid-two reverse">
+                <div class="image-side js-parallax-element" data-speed="0.15">
+                    <img src="assets/images/Aniv.png" alt="Misión Alivera">
+                </div>
+                <div class="text-side js-parallax-element" data-speed="-0.05">
+                    <h2>Misión</h2>
+                    <p>Empoderar a cada marca para que cuente su historia con orgullo y profesionalismo. Actuamos como el soporte estratégico que los emprendedores necesitan, entregando trabajos de rigurosa calidad técnica que son financieramente accesibles.</p>
+                    <p>Nos aseguramos de que ningún gran proyecto se quede atrás por falta de una imagen potente y una estrategia visual clara.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN: VISIÓN -->
+        <section id="vision" class="parallax-section">
+            <div class="parallax-bg js-parallax" data-speed="0.3" style="background-image: url('https://via.placeholder.com/1920x1080/1A1A1A/1A1A1A');"></div>
+            <div class="container grid-two">
+                <div class="text-side js-parallax-element" data-speed="-0.1">
+                    <h2>Visión</h2>
+                    <p>Ser el aliado creativo número uno para quienes están forjando su futuro. Visualizamos a Alivera como un referente global de cercanía y excelencia, donde la tecnología multimedia y el diseño avanzado se convierten en la base del éxito sostenible de miles de negocios.</p>
+                </div>
+                <div class="image-side js-parallax-element" data-speed="0.1">
+                    <img src="assets/images/PlanBDamianoStigone.png" alt="Visión Alivera" height="400px" >
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN: PORTAFOLIO INTERACTIVO -->
+        <section id="portafolio" class="content-section">
+            <div class="tabs-header">
+                <div class="container">
+                    <h2 class="center section-title">Portafolio de Servicios</h2>
+                    <div class="tabs-menu">
+                        <button class="tab-btn active" onclick="openTab(event, 'video')">Edición de Video</button>
+                        <button class="tab-btn" onclick="openTab(event, 'animacion')">Animación</button>
+                        <button class="tab-btn" onclick="openTab(event, 'motion')">Motion Graphics</button>
+                        <button class="tab-btn" onclick="openTab(event, 'digital')">Arte Digital</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container tab-container">
+                <!-- Tab: Edición de Video -->
+                <div id="video" class="tab-content active">
+                    <div class="portfolio-grid">
+                        <div class="portfolio-card">
+                            <div class="card-visual">
+                                <img src="assets/images/Principal.jpg" alt="Edición de Video Comercial">
+                                <span class="tag">Más Vendido</span>
+                            </div>
+                            <div class="card-details">
+                                <h3>Comercial para Redes</h3>
+                                <p>Edición dinámica con ritmo narrativo. Incluye cortes, transiciones y mezcla de audio profesional para impacto en ventas.</p>
+                                <div class="price-block">
+                                    <span class="price">Desde $800 MXN</span>
+                                    <strike>$1,200 MXN</strike>
+                                </div>
+                                <ul class="specs">
+                                    <li>Duración: 30-60 seg</li>
+                                    <li>Entrega: 3 días hábiles</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="portfolio-card">
+                            <div class="card-visual">
+                                <img src="assets/images/Principal.jpg" alt="Reel Corporativo">
+                            </div>
+                            <div class="card-details">
+                                <h3>Reel Institucional</h3>
+                                <p>Montaje estratégico para mostrar la esencia de tu marca. Ideal para páginas de inicio o presentaciones ejecutivas.</p>
+                                <div class="price-block">
+                                    <span class="price">Desde $1,500 MXN</span>
+                                </div>
+                                <ul class="specs">
+                                    <li>Motion Graphics incluidos</li>
+                                    <li>2 Revisiones</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab: Animación -->
+                <div id="animacion" class="tab-content">
+                    <div class="portfolio-grid">
+                        <div class="portfolio-card">
+                            <div class="card-visual">
+                                <img src="assets/images/Aniv.png" alt="Animación de Logo">
+                                <span class="tag promo">Promoción</span>
+                            </div>
+                            <div class="card-details">
+                                <h3>Animación de Logo</h3>
+                                <p>Dale vida a tu marca con una entrada animada profesional en 3D o 2D. Refuerza tu identidad en cada video.</p>
+                                <div class="price-block">
+                                    <span class="price">Desde $600 MXN</span>
+                                    <strike>$900 MXN</strike>
+                                </div>
+                                <ul class="specs">
+                                    <li>Formato MP4 + GIF</li>
+                                    <li>Fondo transparente</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab: Motion Graphics -->
+                <div id="motion" class="tab-content">
+                    <div class="portfolio-grid">
+                        <div class="portfolio-card">
+                            <div class="card-visual">
+                                <img src="assets/images/Principal.jpg" alt="Motion Graphics Infografía">
+                            </div>
+                            <div class="card-details">
+                                <h3>Infografía Animada</h3>
+                                <p>Explica procesos complejos con visuales fluidos. Ideal para capacitación o marketing de servicios técnicos.</p>
+                                <div class="price-block">
+                                    <span class="price">Desde $1,200 MXN</span>
+                                </div>
+                                <ul class="specs">
+                                    <li>Locución profesional opcional</li>
+                                    <li>Guión técnico incluido</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab: Arte Digital -->
+                <div id="digital" class="tab-content">
+                    <div class="portfolio-grid">
+                        <div class="portfolio-card">
+                            <div class="card-visual">
+                                <img src="assets/images/Principal.jpg" alt="Arte Digital Personalizado">
+                                <span class="tag">Exclusivo</span>
+                            </div>
+                            <div class="card-details">
+                                <h3>Ilustración Digital Full</h3>
+                                <p>Arte conceptual, retratos o paisajes. Comisión de arte full body + fondo detallado en modo landscape.</p>
+                                <div class="price-block">
+                                    <span class="price">Desde $500 MXN</span>
+                                    <strike>$700 MXN</strike>
+                                </div>
+                                <ul class="specs">
+                                    <li>Alta resolución (4K)</li>
+                                    <li>3 rondas de cambios</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN: TESTIMONIOS -->
+        <section id="testimonios" class="parallax-section">
+            <div class="parallax-bg js-parallax" data-speed="0.2" style="background-color: #1A1A1A;"></div>
+            <div class="container">
+                <h2 class="center">Testimonios</h2>
+                <p class="center subtitle">La satisfacción de nuestros clientes es nuestra mejor carta de presentación.</p>
+                <div class="testimonials-grid">
+                    <div class="t-card js-parallax-element" data-speed="0.08">
+                        <div class="t-header">
+                            <img src="assets/images/place1.jpg" alt="Laura Barraza" class="avatar">
+                            <div>
+                                <strong>Laura Barraza</strong>
+                                <span>Emprendedora</span>
+                            </div>
+                        </div>
+                        <p>"La atención fue excelente y el anuncio final quedó perfecto. Superó mis expectativas visuales."</p>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                    <div class="t-card js-parallax-element" data-speed="0.1">
+                        <div class="t-header">
+                            <img src="assets/images/place2.png" alt="Jorge Quiroz" class="avatar">
+                            <div>
+                                <strong>Jorge Quiroz</strong>
+                                <span>Negocio Local</span>
+                            </div>
+                        </div>
+                        <p>"Gracias al equipo de Alivera, mi negocio ahora proyecta la imagen profesional que siempre quise."</p>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                    <div class="t-card js-parallax-element" data-speed="0.06">
+                        <div class="t-header">
+                            <img src="assets/images/place3.webp" alt="Beatriz Granillo" class="avatar">
+                            <div>
+                                <strong>Beatriz Granillo</strong>
+                                <span>Artista</span>
+                            </div>
+                        </div>
+                        <p>"Los precios y la calidad fueron un match perfecto. Justo lo que mi proyecto personal necesitaba para crecer."</p>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN: PROCESO DE TRABAJO + CONTACTO -->
+        <section id="contacto" class="parallax-section">
+            <div class="parallax-bg js-parallax" data-speed="0.3" style="background-color: #151515;"></div>
+            <div class="container">
+                
+                <!-- Bloque de Proceso -->
+                <h2 class="center">Etapas del Proceso Creativo</h2>
+                <div class="proceso-list js-parallax-element" data-speed="0.05">
+                    <div class="step"><span class="step-number">01</span> Contacto</div>
+                    <div class="step"><span class="step-number">02</span> Acuerdos y Brief</div>
+                    <div class="step"><span class="step-number">03</span> Revisiones y Refinamiento</div>
+                    <div class="step final-step">
+                        <div class="final-info">
+                            <span class="step-number">04</span>
+                            <div>
+                                <h4>Entrega Final</h4>
+                                <p>Se entrega el proyecto con todas las especificaciones acordadas y se deja la pauta para seguir colaborando con nuestro equipo creativo.</p>
+                            </div>
+                        </div>
+                        <div class="ad-placeholder">
+                            <img src="https://via.placeholder.com/200x150/A8205A/FFF?text=PROYECTO+FINAL" alt="Mockup Entrega Final">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bloque de Contacto -->
+                <h2 class="center" style="margin: 60px 0 20px 0;">Construyamos algo juntos</h2>
+                <div class="contact-grid">
+                    <div class="contact-box js-parallax-element" data-speed="0.1">
+                        <form class="contact-form">
+                            <h3>Solicita tu cotización</h3>
+                            <label>Nombre o Empresa</label>
+                            <input type="text" placeholder="Ej: María García">
+                            
+                            <label>Marca / Proyecto</label>
+                            <input type="text" placeholder="¿Cómo se llama tu proyecto?">
+                            
+                            <label>Describe tu idea</label>
+                            <textarea placeholder="Cuéntanos tu visión, necesidades y objetivos..."></textarea>
+                            
+                            <label>Email de contacto</label>
+                            <input type="email" placeholder="tu@correo.com">
+                        </form>
+                    </div>
+                    
+                    <div class="social-btns js-parallax-element" data-speed="0.15">
+                        <p class="cta-text">¿Listo para empezar?</p>
+                        <a href="https://wa.me/526560000000" class="btn-teal" target="_blank">
+                            <span>WhatsApp Directo</span> <span class="arrow">→</span>
+                        </a>
+                        <a href="mailto:contacto@alivera.com" class="btn-teal">
+                            <span>Email Profesional</span> <span class="arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer: Bloque Magenta -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-logo">
+                <img src="assets/images/LogoH.png" alt="Alivera Logo Footer" width="250px">
+                <p>Diseño Estratégicamente Accesible</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/profile.php?id=61586393766010" target="_blank">Facebook</a>
+                <a href="https://www.instagram.com/alivera.creative/" target="_blank">Instagram</a>
+            </div>
+            <div class="footer-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#portafolio">Portafolio</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Alivera Creative Designs. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Motor de Interactividad y Parallax Matemático -->
+    <script src="js/parallax.js"></script>
+</body>
+</html>
