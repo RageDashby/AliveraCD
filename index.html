@@ -306,26 +306,55 @@
     </main>
 
     <!-- Footer: Bloque Magenta -->
-    <footer>
-        <div class="container footer-grid">
-            <div class="footer-logo">
-                <img src="assets/images/LogoH.png" alt="Alivera Logo Footer" width="250px">
-                <p>Diseño Estratégicamente Accesible</p>
-            </div>
-            <div class="footer-social">
-                <a href="https://www.facebook.com/profile.php?id=61586393766010" target="_blank">Facebook</a>
-                <a href="https://www.instagram.com/alivera.creative/" target="_blank">Instagram</a>
-            </div>
-            <div class="footer-links">
-                <a href="#inicio">Inicio</a>
-                <a href="#portafolio">Portafolio</a>
-                <a href="#contacto">Contacto</a>
-            </div>
+   <footer class="main-footer">
+    <div class="container footer-grid-vertical">
+        <div class="footer-brand">
+            <img src="assets/images/LogoH.png" alt="Alivera Logo" class="footer-logo">
+            <p>Nexo entre la técnica y el arte.</p>
         </div>
-        <div class="footer-bottom">
-            <p>© 2025 Alivera Creative Designs. Todos los derechos reservados.</p>
+
+        <div class="footer-nav-vertical">
+            <h4>Navegación</h4>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#portafolio">Portafolio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
         </div>
-    </footer>
+
+        <div class="footer-legal-vertical">
+            <h4>Legal</h4>
+            <ul>
+                <li><button onclick="togglePrivacy()" class="btn-privacy">Aviso de Privacidad</button></li>
+                <li><a href="https://facebook.com/Alivera" target="_blank">Facebook</a></li>
+                <li><a href="https://instagram.com/Alivera" target="_blank">Instagram</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Alivera Creative Designs. Cd. Juárez, México.</p>
+    </div>
+</footer>
+
+<div id="cookie-banner" class="cookie-banner">
+    <div class="cookie-content">
+        <p>Utilizamos cookies para garantizar que tu experiencia en nuestro nexo creativo sea impecable. 
+           Al continuar, aceptas nuestro <button onclick="togglePrivacy()" class="link-inline">Aviso de Privacidad</button>.</p>
+        <button onclick="acceptCookies()" class="btn-cookie-accept">Aceptar</button>
+    </div>
+</div>
+
+<div id="privacy-modal" class="modal-overlay">
+    <div class="modal-body">
+        <button onclick="togglePrivacy()" class="close-modal">&times;</button>
+        <h2>Aviso de Privacidad Integral</h2>
+        <div class="modal-text">
+            <p><strong>Responsable:</strong> Alivera Creative Designs (Ashby Olvera).</p>
+            <p><strong>Finalidad:</strong> Los datos recabados mediante nuestros formularios se utilizarán exclusivamente para la cotización de servicios multimedia, diseño 3D y branding.</p>
+            <p><strong>Derechos ARCO:</strong> Puedes ejercer tus derechos de acceso, rectificación, cancelación u oposición enviando un correo a tuemail@gmail.com.</p>
+            </div>
+    </div>
+</div>
 
     <!-- Motor de Interactividad y Parallax Matemático -->
     <script src="js/parallax.js"></script>
