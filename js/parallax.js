@@ -26,6 +26,30 @@ function openTab(evt, tabName) {
         evt.currentTarget.classList.add("active");
     }
 }
+// Función para el banner de cookies
+function acceptCookies() {
+    localStorage.setItem('cookiesAceptadas', 'true');
+    document.getElementById('cookie-banner').style.display = 'none';
+}
+
+// Mostrar banner si no se ha aceptado
+window.onload = function() {
+    if (!localStorage.getItem('cookiesAceptadas')) {
+        document.getElementById('cookie-banner').style.display = 'block';
+    }
+}
+
+// Función para el Modal de Privacidad
+function togglePrivacy() {
+    const modal = document.getElementById('privacy-modal');
+    if (modal.style.display === 'flex') {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto'; // Habilita scroll
+    } else {
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden'; // Bloquea scroll
+    }
+}
 /* 
 // --- 2. Motor de Parallax Matemático (Optimizado con rAF) ---
 document.addEventListener('DOMContentLoaded', () => {
